@@ -1,0 +1,45 @@
+@import '../../../../sass/utils/variables';
+@import '../../../../sass/utils/functions';
+@import '../../../../sass/utils/mixins';
+
+.checkBox {
+	cursor: pointer;
+	user-select: none;
+}
+
+.checkBoxInput {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	opacity: 0;
+    z-index: -1;
+
+	&:checked + .checkBoxArea {
+		border-color: getColor('text');
+	}
+
+	&:checked ~ .icon {
+		fill: getColor('text');
+	}
+}
+
+.checkBoxArea {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	display: block;
+	width: 17px;
+	height: 17px;
+	border: 2px solid getColor('desc');
+	border-radius: 4px;
+}
+
+.icon {
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	fill: transparent;
+}

@@ -1,0 +1,79 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/functions';
+@import '../../../sass/utils/mixins';
+
+.info {
+    margin-left: 100px;
+}
+
+.title {
+    font-family: 'TT-Hoves-Bold';
+    @include font(16px, 20px);
+    color: getColor('primary');
+}
+
+.navigationList {
+    margin-top: 25px;
+}
+
+.navigationItem:not(:first-child) {
+    margin-top: 16px;
+}
+
+.navigationLink {
+    position: relative;
+    font-family: 'TT-Hoves-Medium';
+    @include font(14px, 24px);
+    color: getColor('primary');
+    letter-spacing: .0026rem;
+
+    &::before {
+        content: '';
+        height: 1px;
+        background-color: getColor('primary');
+        position: absolute;
+        top: 0;
+        @include animation-effect(changeHoverEnd);
+    }
+
+    &::after {
+        content: '';
+        height: 1px;
+        background-color: getColor('primary');
+        position: absolute;
+        bottom: 0;
+        @include animation-effect(changeHoverEnd);
+
+    }
+
+    &:hover::before,
+    &:focus::before,
+    &:hover::after,
+    &:focus::after {
+        @include animation-effect(changeHoverStart);
+    }
+}
+
+@keyframes changeHoverStart {
+    from {
+        right: 0;
+        width: 0;
+    }
+
+    to {
+        right: 0;
+        width: 100%;
+    }
+}
+
+@keyframes changeHoverEnd{
+    from {
+        left: 0;
+        width: 100%;
+    }
+
+    to {
+        left: 0;
+        width: 0;
+    }
+}

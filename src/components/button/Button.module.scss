@@ -1,0 +1,36 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/functions';
+@import '../../sass/utils/mixins';
+
+.button {
+    width: 53px;
+    height: 53px;
+    border: 1px solid getColor('background');
+    background-color: getColor('pagination');
+    user-select: none;
+
+    &:disabled {
+        background-color: getColor('primary');
+    }
+
+    &:hover:not([disabled]), 
+    &:focus:not([disabled]) {
+        box-shadow:
+            2px 2px 2px getColor('main'),
+            -2px 2px 2px getColor('main'),
+            2px -2px 2px getColor('main'),
+            -2px -2px 2px getColor('main');
+    }
+ 
+    &:active:not([disabled]) {
+        box-shadow:
+            inset 2px 2px 2px getColor('main'),
+            inset -2px 2px 2px getColor('main'),
+            inset 2px -2px 2px getColor('main'),
+            inset -2px -2px 2px getColor('main');
+    }
+}
+
+.icon {
+    fill: #333;
+}

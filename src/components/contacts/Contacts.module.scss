@@ -1,0 +1,31 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/functions';
+@import '../../sass/utils/mixins';
+
+.contacts {
+    padding: 120px 0 0;
+}
+
+.title {
+    font-family: 'TT-Hoves-Light';
+    @include font(64px, 64px);
+    color: getColor('desc');
+}
+
+.wrraper {
+    display: flex;
+    margin-top: 22px;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.form {
+    width: 391px;
+    height: 517px;
+    background: gray;
+}
+
+.image {
+    width: calc(100% - 30px - 391px);
+    object-fit: contain;
+}

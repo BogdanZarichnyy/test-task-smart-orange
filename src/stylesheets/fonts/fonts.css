@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'SF-Pro-Display-Black';
+    src: local('SF-Pro-Display-Black'),
+        url(../../assets/fonts/SF-Pro-Display-Black.otf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT-Hoves-Light';
+    src: local('TT-Hoves-Light'),
+        url(../../assets/fonts/TT-Hoves-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT-Hoves-Regular';
+    src: local('TT-Hoves-Regular'),
+        url(../../assets/fonts/TT-Hoves-Regular.ttf) format('truetype');
+    font-weight: normal;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT-Hoves-Medium';
+    src: local('TT-Hoves-Medium'),
+        url(../../assets/fonts/TT-Hoves-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT-Hoves-Bold';
+    src: local('TT-Hoves-Bold'),
+        url(../../assets/fonts/TT-Hoves-Bold.ttf) format('truetype');
+    font-weight: bold;
+    /* font-weight: 700; */
+    font-style: normal;
+}

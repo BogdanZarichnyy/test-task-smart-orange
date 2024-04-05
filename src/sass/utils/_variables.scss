@@ -1,0 +1,24 @@
+// Colors
+$colors: (
+    // backgrounds
+    'main': #333333,
+    'primary': #FFFFFF,
+    'background': #F2F2F2,
+    'pagination': #F9F9F9,
+    'form': #F3F3F3,
+    'desc': #BDBDBD,
+    'text-desc': #8D8D8D,
+    'page': #E0E0E0,
+    'about': #FBFBFB,
+    'text': #000000,
+    'footer': #2C2C2C,
+    'footerText': #C8C8C8,
+
+    // effects
+    'error': #CB3D40,
+);
+
+// Resolution points
+$mobile: 360px;
+$tablet: 768px;
+$desktop: 1440px;

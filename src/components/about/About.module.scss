@@ -1,0 +1,66 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/functions';
+@import '../../sass/utils/mixins';
+
+.about {
+    padding: 120px 0 0;
+}
+
+.wrraper {
+    position: relative;
+    background-color: getColor('about');
+    padding: 30px 70px 30px 100px;
+}
+
+.imagesList {
+    position: absolute;
+    width: calc(100% - 100px - 30px - 400px - 70px);
+    max-height: calc(265px + 30px + 140px);
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.imageItem {
+    width: 270px;
+
+    &:last-child {
+        margin-top: 30px;
+    }
+}
+
+.company {
+    margin-left: auto;
+    width: 400px;
+}
+
+.title {
+    font-family: 'TT-Hoves-Light';
+    @include font(64px, 64px);
+    color: getColor('desc');
+}
+
+.text {
+    margin-top: 20px;
+    font-family: 'TT-Hoves-Light';
+    @include font(16px, 25px);
+    color: getColor('text');
+}
+
+.buttonAbout{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 222px;
+    height: 71px;
+    border: none;
+    background-color: getColor('primary');
+    padding: 30px 0 29px 0;
+    font-family: 'TT-Hoves-Regular';
+    @include font(12px, 12px);
+    letter-spacing: .133rem;
+    color: getColor('main');
+}

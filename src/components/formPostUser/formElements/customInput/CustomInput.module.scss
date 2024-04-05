@@ -1,0 +1,36 @@
+@import '../../../../sass/utils/variables';
+@import '../../../../sass/utils/functions';
+@import '../../../../sass/utils/mixins';
+
+.labelInput {
+    display: block;
+    position: relative;
+    color: getColor('text-desc');
+    font-family: 'TT-Hoves-Regular';
+    @include font(14px, 18px);
+    letter-spacing: .0487rem;
+
+    &[for="conditions"] .textLabel {
+        left: 40px;
+    }
+}
+
+.labelInput + .labelInput {
+    margin-top: 10px;
+}
+
+.textLabel {
+    position: absolute;
+    left: 21px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include transition-effect(top font-size line-height);
+}
+
+.textArea {
+    top: 23px;
+}
+
+.require {
+    color: getColor('error');
+}

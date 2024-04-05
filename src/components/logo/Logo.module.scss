@@ -1,0 +1,21 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/functions';
+@import '../../sass/utils/mixins';
+
+.logo {
+    @include transition-effect(transform);
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.logoIcon {
+    display: block;
+    margin: 0 auto;
+}
+
+.logoImage {
+    margin-top: 5px;
+    width: 69px;
+}

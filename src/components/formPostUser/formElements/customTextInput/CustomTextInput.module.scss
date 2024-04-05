@@ -1,0 +1,44 @@
+@import '../../../../sass/utils/variables';
+@import '../../../../sass/utils/functions';
+@import '../../../../sass/utils/mixins';
+
+.input {
+    background-color: getColor('form');
+    padding: 14px 21px;
+    color: getColor('text');
+    font-family: 'TT-Hoves-Regular';
+    @include font(14px, 17.5px);
+    letter-spacing: .0487rem;
+    border: none;
+    width: 100%;
+    outline: transparent;
+
+    &:focus + span,
+    &:not(:placeholder-shown) + span {
+        @include font(12px, 14px);
+        top: 0;
+        padding: 0 4px;
+        background-color: getColor('background');
+    }
+}
+
+.inputInvalid {
+    & + span, 
+    &:focus + span {
+        color: getColor('error');
+    }
+}
+
+.errorFeedback {
+    position: absolute;
+    top: 50%;
+    left: 102%;
+    min-width: 200px;
+    transform: translateY(-50%);
+    color: getColor('text-desc');
+    @include font(12px, 14px);
+}
+
+.isErrorFeedback {
+    color: getColor('error');
+}

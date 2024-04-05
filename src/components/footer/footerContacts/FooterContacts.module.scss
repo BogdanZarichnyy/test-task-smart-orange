@@ -1,0 +1,60 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/functions';
+@import '../../../sass/utils/mixins';
+
+.contacts {
+    margin-left: 157px;
+}
+
+.title {
+    font-family: 'TT-Hoves-Bold';
+    @include font(16px, 20px);
+    color: getColor('primary');
+}
+
+.contactsList {
+    margin-top: 25px;
+}
+
+.contact {
+    width: 260px;
+
+    &:first-child .icon,
+    &:last-child .icon {
+        stroke: getColor('primary');
+        fill: none;
+    }
+
+    &:not(:first-child) {
+        margin-top: 33px;
+    }
+}
+
+.link {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'TT-Hoves-Medium';
+    @include font(14px, 24px);
+    color: getColor('primary');
+    letter-spacing: .0026rem;
+    @include transition-effect(color);
+
+    &[rel="noopener noreferrer"] .icon {
+        width: 30px;
+        height: 18px;
+    }
+
+    &:hover,
+    &:focus {
+        color: getColor('footerText');
+
+        & .icon {
+            stroke: getColor('footerText');
+        }
+    }
+}
+
+.icon {
+    fill: getColor('primary');
+    margin-right: 19px;
+}

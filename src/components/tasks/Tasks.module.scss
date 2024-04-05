@@ -1,0 +1,43 @@
+@import '../../sass/utils/variables';
+@import '../../sass/utils/functions';
+@import '../../sass/utils/mixins';
+
+.tasks {
+    padding: 150px 0 0;
+}
+
+.title {
+    font-family: 'TT-Hoves-Light';
+    @include font(64px, 64px);
+    color: getColor('desc');
+}
+
+.tasksList {
+    margin-top: 62px;
+    display: flex;
+    gap: 30px;
+}
+
+.taskItem {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: calc((100% - 30px) / 2);
+
+    &:first-child p {
+        width: 280px;
+    }
+}
+
+.number {
+    width: 120px;
+    font-family: 'SF-Pro-Display-Black';
+    @include font(200px, 144px);
+    color: getColor('background');
+}
+
+.text {
+    font-family: 'TT-Hoves-Regular';
+    @include font(22px, 36px);
+    color: getColor('main');
+}

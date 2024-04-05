@@ -1,0 +1,37 @@
+@import '../../../sass/utils/variables';
+@import '../../../sass/utils/functions';
+@import '../../../sass/utils/mixins';
+
+.social {
+    margin-left: auto;
+}
+
+.title {
+    font-family: 'TT-Hoves-Bold';
+    @include font(16px, 20px);
+    color: getColor('primary');
+}
+
+.socialList {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.socialItem {
+    display: flex;
+    justify-content: center;
+    width: 21px;
+}
+
+.link {
+    &:hover .icon,
+    &:focus .icon {
+        fill: getColor('footerText');
+    }
+}
+
+.icon {
+    fill: getColor('primary');
+}
