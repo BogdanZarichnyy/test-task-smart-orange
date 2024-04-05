@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/test-task-smart-orange/static/css/main.8616248a.css",
+    "main.js": "/test-task-smart-orange/static/js/main.9029c5f2.js",
+    "static/media/SF-Pro-Display-Black.otf": "/test-task-smart-orange/static/media/SF-Pro-Display-Black.9f6bb018ca3e8b89e9da.otf",
+    "static/media/TT-Hoves-Light.ttf": "/test-task-smart-orange/static/media/TT-Hoves-Light.ff447b186f99becf2ff2.ttf",
+    "static/media/TT-Hoves-Bold.ttf": "/test-task-smart-orange/static/media/TT-Hoves-Bold.170a72c0ea1224530434.ttf",
+    "static/media/TT-Hoves-Regular.ttf": "/test-task-smart-orange/static/media/TT-Hoves-Regular.22badb647628141aaacb.ttf",
+    "static/media/TT-Hoves-Medium.ttf": "/test-task-smart-orange/static/media/TT-Hoves-Medium.c84646119459f89cd0d4.ttf",
+    "static/media/home1.jpg": "/test-task-smart-orange/static/media/home1.b514503b25781a00eb7d.jpg",
+    "static/media/home2.jpg": "/test-task-smart-orange/static/media/home2.3ba1a1f134e650bc2ba0.jpg",
+    "static/media/home3.jpg": "/test-task-smart-orange/static/media/home3.deacdd3c0367774f8b69.jpg",
+    "static/media/home.jpg": "/test-task-smart-orange/static/media/home.c93da8e6988c113f2678.jpg",
+    "static/media/project4.jpg": "/test-task-smart-orange/static/media/project4.f3b905f42587c624bfb2.jpg",
+    "static/media/project2.jpg": "/test-task-smart-orange/static/media/project2.f05c1e8d88a62bc10184.jpg",
+    "static/media/project5.jpg": "/test-task-smart-orange/static/media/project5.b63cd0b1f243929c5c30.jpg",
+    "static/media/contacts.jpg": "/test-task-smart-orange/static/media/contacts.db8ff9cf89adbb21fa7c.jpg",
+    "static/media/project3.jpg": "/test-task-smart-orange/static/media/project3.1dad0043a763ab998618.jpg",
+    "static/media/about3.jpg": "/test-task-smart-orange/static/media/about3.f63e388d3225c00dd740.jpg",
+    "static/media/project1.jpg": "/test-task-smart-orange/static/media/project1.44a587e87314088c7643.jpg",
+    "static/media/sprite.svg": "/test-task-smart-orange/static/media/sprite.93f762e34ae4e745f2643a838e47570f.svg",
+    "index.html": "/test-task-smart-orange/index.html",
+    "main.8616248a.css.map": "/test-task-smart-orange/static/css/main.8616248a.css.map",
+    "main.9029c5f2.js.map": "/test-task-smart-orange/static/js/main.9029c5f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8616248a.css",
+    "static/js/main.9029c5f2.js"
+  ]
+}
